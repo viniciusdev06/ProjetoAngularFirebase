@@ -1,13 +1,36 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      Blank
-    </ion-title>
-  </ion-toolbar>
-</ion-header>
-
 <ion-content [fullscreen]="true">
 
-  
+  <ion-row class="ion-justify-content-center">
+    <ion-col size="12" size-lg="5">
+      <ion-segment value="usuarios" (ionChange)="trocar($event)">
+        <ion-segment-button value="usuarios">Usuarios</ion-segment-button>
+        <ion-segment-button value="treinos">Treinos</ion-segment-button>
+
+      </ion-segment>
+    </ion-col>
+  </ion-row>
+
+  <ion-row class="justify-content-center" *ngIf="this.segments =='usuarios'">
+    <ion-col size="12" size-lg="5" >
+      <ng-container *ngFor="let user of this.usuarios" >
+        <ion-item color="primary">
+          <ion-label>
+            <h2>{{user.nome}}</h2>
+            <h3>Idade: {{user.idade}}</h3>
+            <h2>Genero: {{user.genero}}</h2>
+
+          </ion-label>
+        </ion-item>
+      </ng-container>
+    </ion-col>
+
+    <ion-col size="12" size-lg="5"></ion-col>
+  </ion-row>
+  <ion-row class="justify-content-center" *ngIf="this.segments =='treinos'">
+
+
+    <ion-col size="12" size-lg="5"></ion-col>
+  </ion-row>
+
 
 </ion-content>
