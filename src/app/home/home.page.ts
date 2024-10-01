@@ -7,7 +7,14 @@ import { Component } from '@angular/core';
   styleUrls: ['home.page.scss'],
 })
 export class HomePage {
-
+user = :any {
+  email: null,
+  password: null
+}
   constructor(){ }
   
+  acessar(){
+    public authService: AUthenticateService
+  }
+
 }
