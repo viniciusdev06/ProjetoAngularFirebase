@@ -1,0 +1,42 @@
+.fundo{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 16px;
+    outline: 1px solid #fff;
+    min-height: 80vh;
+    color: white;
+    opacity: 20%;
+}
+
+.basquete{background-image: url('https://s2.static.brasilescola.uol.com.br/be/2022/08/basquete-feminino.jpg');}
+.futebol{background-image: url('https://lh3.googleusercontent.com/proxy/cANmPlG7pLydp3jzs4ljssPWbDanYhpIcgBgVGbUUcs9ZcCfqL3hhFgV2xXxGISosp0p75EH3teMqU5hZte2_-YyemJIGIEtIL5p7_FqzP2wNSkwAp1q-aJELXZ2o3iCIPqrKEhddkKyMxeFfTOTbNNxo0c_Ox-rH5Oy');}
+.volei{background-image: url('https://img.olympics.com/images/image/private/t_s_16_9_g_auto/t_s_w960/f_auto/primary/fo2swyecqnihucyoxmsn');}
+.tenis{background-image: url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi71-uZzvDBTMUl0pXN27T9AGmdv4rqAmtI2BWi5wdnKCJDyJaw8Pa6bW3WyOVb51ZrSdGpC_BhluSGLjVhHvJGk1qT0Gc6QYEEtlrjfTcmoA8Z7qRsFoQSBABnGJXTTgMzVAVyS7_YmrM/s1600/123+%25281%2529.jpg');}
+.esporte{background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-gLqZNvkwx_UB8Ioo-GxdKCgGJJUubBLTlw&s');}
+
+h1{
+    font-size: 4rem;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 45px;
+    margin-bottom: 45px;
+    font-weight: bold;
+
+}
+
+p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.2rem;
+    text-align: justify;
+}
+
+ion-card  img{
+    height: 150px;
+    width: 100%;
+    object-fit: cover;
+}
+
+
+ion-content{
+    --background-color: #acec34;
+}

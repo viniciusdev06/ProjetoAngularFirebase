@@ -12,13 +12,10 @@ const routes: Routes = [
     pathMatch: 'full'
   },
   {
-    path: 'contato',
-    loadChildren: () => import('./contato/contato.module').then( m => m.ContatoPageModule)
+    path: 'esportes',
+    loadChildren: () => import('./esportes/esportes.module').then( m => m.EsportesPageModule)
   },
-  {
-    path: 'galeria',
-    loadChildren: () => import('./galeria/galeria.module').then( m => m.GaleriaPageModule)
-  }
+ 
 ];
 
 @NgModule({

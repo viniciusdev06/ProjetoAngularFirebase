@@ -1,26 +1,24 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { IonicModule } from '@ionic/angular';
 import { FormsModule } from '@angular/forms';
-import { HomePage } from './home.page';
 
-import { HomePageRoutingModule } from './home-routing.module';
+import { IonicModule } from '@ionic/angular';
 
+import { EsportesPageRoutingModule } from './esportes-routing.module';
+
+import { EsportesPage } from './esportes.page';
 import { MenuModule } from '../shared/components/menu/menu.module';
 import { FooterModule } from '../shared/components/footer/footer.module';
-
-
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    HomePageRoutingModule,
+    EsportesPageRoutingModule,
     MenuModule,
     FooterModule
-
   ],
-  declarations: [HomePage]
+  declarations: [EsportesPage]
 })
-export class HomePageModule {}
+export class EsportesPageModule {}
